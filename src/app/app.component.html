@@ -1,0 +1,15 @@
+<!--https://www.npmjs.com/package/ngx-ui-loader -->
+
+<ngx-ui-loader 
+  fgsColor="#ff4081" 
+  text="Please wait...." 
+  pbThickness:number='6'
+  textColor="#ff4081" 
+></ngx-ui-loader>
+
+<div ngxUiLoaderBlurred (blur)="10">
+  <app-navbar></app-navbar>
+
+  <!-- dynamic content -->
+  <router-outlet></router-outlet>
+</div>
